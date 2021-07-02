@@ -3,32 +3,47 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/style1.css">
-        <style>
+        <script>
+            
+            window.onscroll = function() {myFunction()};
 
-        </style>
-        <title>InCodingWeTrust</title>
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+}
+        </script>
     </head>
+    
 
-
-    <header>
-        <div class ="header-flex-table">    
-            <div class="header-flex-element">
-                <img src="../img/logo2.jpg" alt="Logo2" >
-            </div>
-            <div class="header-flex-element" >
-                <h1>InCodingWeTrust</h1>
-                <h2>Student in IIIT-H, joined September, 2020.</h2>
-            </div>
+    <body>
+        <div class="header">
+            <h2>WELCOME TO THE INDEX PAGE</h2>
+            <p>Pick where to goto from the nav bar</p>
         </div>
-    </header>
-
-    <nav id="navbar">
+          
+        <div id="navbar">
             <a class="active" href="javascript:void(0)">Home</a>
-            <a href="javascript:void(0)">About me</a>
             <a href="javascript:void(0)">Achievements</a>
-            <a href="javascript:void(0)">Skills</a>
             <a href="javascript:void(0)">Contact</a>
-            <a href="javascript:void(0)">Education</a>
-           
-    </nav>
+        </div>
+          
+        <div class="content">
+            <h3>Sticky Navigation Example</h3>
+            <p>The navbar will stick to the top when you reach its scroll position.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+            <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+        </div>
+        
+    </body>
 </html>

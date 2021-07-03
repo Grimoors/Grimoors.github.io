@@ -90,8 +90,8 @@ body {
     display: inline-block;
   }
   .cblock1{
-    width: 600px;
-    margin: 5em auto;
+    width: 60%;
+    margin: 3em auto;
     padding: 2em;
     background-color: #fdfdff;
     border-radius: 0.5em;
@@ -260,3 +260,63 @@ align-self: center;
       }
     }
   }
+
+  table,
+  thead,
+  td {
+      border-collapse: collapse;
+  }
+  
+  .achiev table {
+      background-color: white;
+  }
+  
+  .achiev thead {
+      background-color: rgb(192, 234, 255);
+  }
+  
+  .achiev td {
+      border: 1px solid black;
+      border-right: 2px solid black;
+      border-left: 2px solid black;
+      padding: 5px
+  }
+  
+  .achiev th {
+      border: 2px solid black;
+      padding: 5px
+  }
+  
+  .achiev table {
+      border: 2px solid rgb(0, 0, 0);
+  }
+  
+  .interest_table th {
+      margin: 2px;
+      text-align: left;
+      font-weight: normal;
+      width: 20%;
+  }
+  
+  .interest_table table {
+      width: 100%
+  }
+  
+  .items {
+      margin: 1px;
+      box-shadow: 1px 1px rgba(107, 188, 255, 0.15);
+      height: 40px;
+  }
+  
+  .items:not(.active_1):hover {
+      background-color: rgba(107, 206, 255, 0.55);
+  }
+  
+  .active_1 {
+      background-color: rgb(107, 206, 255);
+  }
+  
+  .non_active {
+      background-color: rgb(192, 234, 255);
+  }
+  

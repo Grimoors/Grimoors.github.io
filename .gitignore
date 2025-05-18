@@ -1,2 +1,5 @@
-
-2020113002.zip
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

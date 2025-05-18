@@ -34,7 +34,14 @@ description: >- # this means to ignore newlines until "baseurl:"
   I have taught six courses at IIIT Hyderabad and three at I-Hub Data
   on topics ranging from Data Structures & Algorithms to Spatial Informatics.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://grimoors.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://vivek-mathur.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Nav links
+navigation:
+  - title: Blog
+    url: /
+  - title: CV
+    url: /cv
 linkedin_username: vivek-mathur
 twitter_username: grimoors
 github_username:  grimoors

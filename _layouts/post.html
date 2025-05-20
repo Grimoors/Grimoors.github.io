@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">
+      Published on {{ page.date | date: "%B %-d, %Y" }}
+    </p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+
+    <!-- 1) Last-updated timestamp -->
+    {% if page.last_modified_at %}
+      <p class="post-updated">
+        🔄 Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+      </p>
+    {% endif %}
+
+    <!-- 2) View history link -->
+    {% if site.github.repository_url %}
+      {% assign history_url = site.github.repository_url 
+         | append: '/commits/main/' 
+         | append: page.path %}
+      <p>
+        📜 <a href="{{ history_url }}" target="_blank">
+          View this post’s commit history
+        </a>
+      </p>
+    {% endif %}
+
+    <!-- BONUS: Last commit SHA & message -->
+    {% if site.github.repository_url %}
+      {% assign info = page.path | last_commit_info %}
+      {% if info %}
+        <p>
+          🔖 Commit <code>{{ info[0] }}</code> &mdash; “{{ info[1] }}”
+        </p>
+      {% endif %}
+    {% endif %}
+
+  </footer>
+</article>

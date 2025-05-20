@@ -50,6 +50,10 @@ github_username:  grimoors
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-github-metadata
+
+future: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
